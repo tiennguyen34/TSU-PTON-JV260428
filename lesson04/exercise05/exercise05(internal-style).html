@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phần 2: Internal-style</title>
+    <style>
+        /* Định dạng chung cho cả trang */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Tiêu đề màu cam */
+        h1 {
+            color: #FFA500;
+            font-size: 28px;
+        }
+
+        /* Dòng đầu tiên: Tên CSS xanh đậm, vế sau xanh nhạt */
+        .intro {
+            color: #0000FF;
+            font-weight: bold;
+        }
+        .intro span {
+            color: #6495ED;
+            font-weight: normal;
+        }
+
+        /* Đoạn văn màu đỏ và kích thước tùy chỉnh */
+        .description {
+            color: #FF0000;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .tip-box {
+            background-color: #FFF9C4;
+            border-left: 5px solid #FFA500;
+            padding: 15px;
+            display: table; 
+            color: #856404;
+            font-size: 14px;
+        }
+
+        .highlight {
+            color: #FFA500;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What is CSS?</h1>
+
+    <p class="intro">
+        Cascading Style Sheets (CSS) 
+        <span>is used to format the layout of a webpage.</span>
+    </p>
+
+    <p class="description">
+        With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are <br>
+        positioned and laid out, what background images or background colors are to be used, different displays for <br>
+        different devices and screen sizes, and much more!
+    </p>
+
+    <div class="tip-box">
+        <span class="highlight">Tip:</span> The word <span class="highlight">cascading</span> means that a style applied to a parent element will also apply to all children <br>
+        elements within the parent. So, if you set the color of the body text to "blue," all headings, paragraphs, and <br>
+        other text elements within the body will also get the same color (unless you specify something else)!
+    </div>
+
+</body>
+</html>

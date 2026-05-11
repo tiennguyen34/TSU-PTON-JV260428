@@ -1,0 +1,18 @@
+/* reset css mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* css trang web */
+h1 {
+  background-color: rgb(92, 90, 90);
+  color: rgb(227, 103, 103);
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+div {
+  text-align: center;
+}

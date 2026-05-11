@@ -1,0 +1,11 @@
+.box {
+  border: 1px solid black;
+  padding: 15px;
+  width: 600px;
+  line-height: 1.6;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}

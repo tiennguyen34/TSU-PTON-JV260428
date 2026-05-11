@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+h1 {
+    color: #FFA500; 
+}
+
+
+.intro {
+    color: #0000FF; 
+    font-weight: bold;
+}
+.intro span {
+    color: #6495ED; 
+    font-weight: normal;
+}
+
+.description {
+    color: #FF0000;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Khung Tip */
+.tip-box {
+    background-color: #FFF9C4;
+    border-left: 5px solid #FFA500;
+    padding: 15px;
+    display: table; 
+    color: #856404;
+    font-size: 14px;
+}
+
+.highlight {
+    color: #FFA500;
+    font-weight: bold;
+}
