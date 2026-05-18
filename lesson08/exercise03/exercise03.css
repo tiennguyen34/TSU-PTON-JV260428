@@ -1,0 +1,30 @@
+
+.footer {
+    background-color: #222222;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px 30px;                 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;                 
+    }
+
+    .footer-item {
+        font-size: 20px;            
+    }
+}

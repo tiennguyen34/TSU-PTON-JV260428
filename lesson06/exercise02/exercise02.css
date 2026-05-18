@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,"Segoe UI",  Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.register-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+.register-card h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #0069d9;
+}

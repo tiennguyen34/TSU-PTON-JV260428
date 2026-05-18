@@ -1,0 +1,22 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    padding: 10px;
+    border: 1px solid #333; 
+    background-color: #fff;
+}
+
+.grid-item {
+    background-color: #3498db; 
+    color: white;
+    text-align: center;
+    padding: 25px 0; 
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 4px; 
+}
+.item-5 {
+    grid-column: span 2; 
+}
