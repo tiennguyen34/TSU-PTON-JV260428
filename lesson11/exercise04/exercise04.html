@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng vòng lặp for</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            color: #1e293b;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+        #result {
+            text-align: left;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Vòng lặp For trong JS</h2>
+        <button onclick="displayNumbers()">Chạy vòng lặp</button>
+        <br>
+        <div id="result"></div>
+    </div>
+
+    <script src="exercise04.js"></script>
+</body>
+</html>

@@ -1,0 +1,573 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #0F172A;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10%;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0F172A;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #06B6D4; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #64748B;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 24px;
+    transition: color 0.2s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: #0F172A;
+    font-weight: 700;
+}
+
+.btn-signup {
+    background-color: #0F172A;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-signup:hover {
+    background-color: #1E293B;
+}
+
+/* HERO SECTION */
+.hero-container {
+    padding: 40px 10% 80px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 520px;
+}
+
+.badge-top {
+    color: #06B6D4;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    letter-spacing: -1.5px;
+}
+
+.hero-desc {
+    color: #64748B;
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 35px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn-cyan {
+    background-color: #22D3EE;
+    color: #0F172A;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(34, 211, 238, 0.25);
+    transition: opacity 0.2s;
+}
+
+.btn-cyan:hover {
+    background-color: #06B6D4;
+}
+
+.btn-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #E2E8F0;
+    background: #ffffff;
+    color: #06B6D4;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.hero-image-area {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    border-radius: 40px; /* Góc bo tròn lớn mượt mà */
+    display: block;
+}
+
+/* Thẻ đè lên ảnh (Floating stack) */
+.floating-users-badge {
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+    background: #ffffff;
+    padding: 14px 24px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar-stack {
+    display: flex;
+}
+
+.avatar-stack img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-left: -10px;
+}
+
+.avatar-stack img:first-child {
+    margin-left: 0;
+}
+
+.badge-info h4 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.badge-info p {
+    font-size: 12px;
+    color: #64748B;
+}
+
+/* SECTION TIÊU ĐỀ CHUNG */
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 16px;
+    letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #64748B;
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+/* FEATURES SECTION */
+.features {
+    padding: 100px 10%;
+    background-color: #F8FAFC; /* Màu nền xám siêu mờ */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 45px 35px;
+    border-radius: 24px;
+}
+
+.icon-shape {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.color-cyan { background-color: #06B6D4; }
+.color-orange { background-color: #F97316; }
+.color-purple { background-color: #8B5CF6; }
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.feature-card p {
+    color: #64748B;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* POPULAR COURSES */
+.popular-courses {
+    padding: 100px 10%;
+}
+
+.courses-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.title-left {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.link-view-all {
+    color: #06B6D4;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.course-card {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #E2E8F0;
+}
+
+.card-thumb img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-details {
+    padding: 28px;
+}
+
+.card-price {
+    color: #06B6D4;
+    font-weight: 800;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.card-details h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card-meta {
+    display: flex;
+    gap: 24px;
+    color: #64748B;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-meta i {
+    margin-right: 5px;
+}
+
+/* COUNTER BANNER */
+.counter-banner-area {
+    padding: 60px 10%;
+}
+
+.counter-banner {
+    display: flex;
+    justify-content: space-around;
+    background: #0F172A;
+    color: #ffffff;
+    border-radius: 32px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.counter-box h3 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #22D3EE;
+    margin-bottom: 8px;
+}
+
+.counter-box p {
+    color: #94A3B8;
+    font-size: 15px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    padding: 100px 10%;
+}
+
+.testimonial-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quote-paragraph {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+}
+
+.user-profile-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 35px;
+}
+
+.user-profile-meta img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-titles {
+    text-align: left;
+}
+
+.user-titles h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user-titles p {
+    color: #64748B;
+    font-size: 13px;
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.arrow-icon {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #E2E8F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #64748B;
+    cursor: pointer;
+}
+
+.arrow-icon.active-cyan {
+    background-color: #22D3EE;
+    color: #0F172A;
+    border-color: #22D3EE;
+}
+
+/* JOIN BANNER CTA */
+.join-cta-area {
+    padding: 60px 10%;
+}
+
+.join-cta-box {
+    background-color: #ECFEFF; /* Màu nền Cyan mờ cực nhạt */
+    border-radius: 32px;
+    padding: 55px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-left-text h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.cta-left-text p {
+    color: #64748B;
+    font-size: 16px;
+}
+
+.btn-dark-cta {
+    background-color: #0F172A;
+    color: #ffffff;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #F8FAFC;
+    padding: 90px 10% 40px;
+    border-top: 1px solid #E2E8F0;
+}
+
+.footer-main-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.social-circle-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.social-circle-links a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #E2E8F0;
+    color: #0F172A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.social-circle-links a:hover {
+    background-color: #22D3EE;
+}
+
+.footer-links-column h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer-links-column a {
+    display: block;
+    color: #64748B;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.footer-links-column a:hover {
+    color: #0F172A;
+}
+
+.footer-copyright-row {
+    text-align: center;
+    color: #94A3B8;
+    font-size: 13px;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 35px;
+}
+
+/* ĐÁP ỨNG THIẾT BỊ (RESPONSIVE) */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image-area {
+        justify-content: center;
+    }
+    .features-grid, .courses-grid, .footer-main-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .join-cta-box {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid, .courses-grid, .footer-main-grid {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .counter-banner {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

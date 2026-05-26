@@ -1,0 +1,482 @@
+/* RESET TIÊU CHUẨN FIGMA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #0b0f19; /* Màu nền tối sâu chuẩn Figma đêm */
+    color: #ffffff;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0b0f19;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin: 0 24px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.btn-join {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.btn-join:hover {
+    background-color: #ffffff;
+    color: #0b0f19;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.highlight-text {
+    color: #2563eb; /* Màu xanh neon mềm rực rỡ */
+}
+
+.hero-desc {
+    color: #94a3b8;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: 1px solid #334155;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    border-color: #2563eb;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* CÁC TIÊU ĐỀ KHỐI LỚN */
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 15px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SERVICES SECTION */
+.services {
+    padding: 100px 10% 60px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    padding: 40px 30px;
+    border-radius: 14px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-wrapper {
+    background: rgba(255, 255, 255, 0.15);
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+/* Đúng bảng màu phẳng mờ của video */
+.card-orange { background-color: #c2410c; }
+.card-purple { background-color: #5b21b6; }
+.card-blue { background-color: #1d4ed8; }
+
+/* TOOLS SECTION */
+.tools-section {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #111827;
+    margin: 60px 0;
+}
+
+.tools-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.tools-section p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.tools-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tool-item i {
+    margin-right: 6px;
+}
+
+/* DEVELOPERS SECTION */
+.developers {
+    padding: 60px 10%;
+}
+
+.dev-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.dev-card {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.avatar-box {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.dev-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dev-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.dev-tag {
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Phân loại màu tag icon giống Figma */
+.tag-webflow { color: #3b82f6; }
+.tag-bubble { color: #f59e0b; }
+.tag-react { color: #06b6d4; }
+.tag-vue { color: #10b981; }
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* TESTIMONIALS SECTION (6 Ô LƯỚI KHÍT) */
+.testimonials {
+    padding: 80px 10%;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.test-card {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test-card .quote {
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.test-card .user-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* SHOWCASE SECTION (Phần thêm vào trước CTA) */
+.showcase-section {
+    padding: 40px 10%;
+}
+
+.showcase-container {
+    background-color: #111827;
+    border-radius: 16px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #1f2937;
+}
+
+.showcase-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.showcase-text p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+.showcase-img img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* CALL TO ACTION */
+.cta-section {
+    padding: 80px 10% 40px;
+}
+
+.cta-box {
+    background-color: #2563eb;
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.cta-box h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.cta-box p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #2563eb;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: opacity 0.2s;
+}
+
+.btn-light:hover {
+    opacity: 0.95;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    border-top: 1px solid #1f2937;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #64748b;
+    text-decoration: none;
+}
+
+.footer-logo {
+    font-weight: 600;
+}
+
+/* ĐÁP ỨNG THIẾT BỊ DI ĐỘNG (RESPONSIVE) */
+@media (max-width: 1024px) {
+    .services-grid, .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dev-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .services-grid, .dev-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .showcase-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}
