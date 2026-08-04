@@ -1,0 +1,24 @@
+
+CREATE TABLE accounts (
+    accountID INT PRIMARY KEY AUTO_INCREMENT,
+    balance DECIMAL(10,2) NOT NULL
+);
+
+
+INSERT INTO accounts (balance) VALUES 
+(5000000.00), (10000000.00), (1500000.00), (2500000.00), (3000000.00),
+(7500000.00), (12000000.00), (900000.00), (4500000.00), (6000000.00);
+
+SELECT * FROM accounts WHERE accountID = 1;
+
+START TRANSACTION;
+
+UPDATE accounts 
+SET balance = balance + 1000000.00 
+WHERE accountID = 1;
+
+COMMIT;
+
+
+SELECT * FROM accounts WHERE accountID = 1;
+
